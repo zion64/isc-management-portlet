@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014. 4. 16 ?? 5:39:10 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping default-lazy="false">
+ <class name="com.ktds.isc.domain.Requestofdeletingsmartsheet"
+  schema="public" table="requestofdeletingsmartsheet">
+  <id name="id" type="long">
+   <column name="id"/>
+   <generator class="assigned"/>
+  </id>
+  <many-to-one class="com.ktds.isc.domain.User" fetch="select"
+   lazy="false" name="user">
+   <column length="10" name="reguserid"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="agentcode" type="string">
+   <column length="15" name="agentcode" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="agentname" type="string">
+   <column length="20" name="agentname" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="requestorid" type="string">
+   <column length="10" name="requestorid" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="requestorname" type="string">
+   <column length="30" name="requestorname" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="customername" type="string">
+   <column length="20" name="customername" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="customercode" type="string">
+   <column length="20" name="customercode" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="sheetnumber" type="string">
+   <column name="sheetnumber"/>
+  </property>
+  <property generated="never" lazy="false" name="regdate" type="string">
+   <column length="20" name="regdate"/>
+  </property>
+  <property generated="never" lazy="false" name="requestcontent" type="string">
+   <column length="100" name="requestcontent" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="modifieddate" type="timestamp">
+   <column length="29" name="modifieddate"/>
+  </property>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+#isc-container{
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 10px;;
+}
+
+#isc-header {
+	background-color: #ffffff;;
+}
+
+#isc-input {
+	background-color: #0000ff float :left;
+	width: 50%
+}
+
+#smartsheet-delete-req-list {
+	background-color: #e8e8e8 float :right;
+	width: 50%
+}

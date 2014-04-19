@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014. 4. 16 ?? 5:39:10 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping default-lazy="false">
+ <class name="com.ktds.isc.domain.User" schema="public" table="user">
+  <id name="userid" type="string">
+   <column length="10" name="userid"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" name="username" type="string">
+   <column length="30" name="username" not-null="true"/>
+  </property>
+  <set fetch="select" inverse="true" lazy="false"
+   name="requestofdeletingsmartsheets" sort="unsorted" table="requestofdeletingsmartsheet">
+   <key>
+    <column length="10" name="reguserid"/>
+   </key>
+   <one-to-many class="com.ktds.isc.domain.Requestofdeletingsmartsheet"/>
+  </set>
+ </class>
+</hibernate-mapping>
