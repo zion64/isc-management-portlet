@@ -5,7 +5,4 @@
 	<category name="ISC Manager">
 		<portlet id="isc-manager-portlet" />
 	</category>
-	<category name="ISC Manager">
-		<portlet id="new vaadin portlet"></portlet>
-	</category>
 </display>
