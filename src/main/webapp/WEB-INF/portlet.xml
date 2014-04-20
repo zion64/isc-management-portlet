@@ -39,12 +39,14 @@
 		<portlet-class>com.vaadin.server.VaadinPortlet</portlet-class>
 		<init-param>
 			<name>UI</name>
-			<value>com.ktds.isc.vaadin.NewVaadinPortletApplication</value>
+			<value>com.ktds.isc.vaadin.NewVaadinPortletUI</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
 			<portlet-mode>view</portlet-mode>
+            <portlet-mode>edit</portlet-mode>
+            <portlet-mode>help</portlet-mode>
 		</supports>
 		<resource-bundle>content.Language</resource-bundle>
 		<portlet-info>
