@@ -4,5 +4,6 @@
 <display>
 	<category name="ISC Manager">
 		<portlet id="isc-manager-portlet" />
+		<portlet id="newvaadinportlet"></portlet>
 	</category>
 </display>

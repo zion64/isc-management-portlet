@@ -98,12 +98,43 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-server</artifactId>
+			<version>${version.vaadin}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>
-			<artifactId>vaadin</artifactId>
-			<version>6.8.9</version>
+			<artifactId>vaadin-client</artifactId>
+			<version>${version.vaadin}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-client-compiled</artifactId>
+			<version>${version.vaadin}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-push</artifactId>
+			<version>${version.vaadin}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-themes</artifactId>
+			<version>${version.vaadin}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-shared-deps</artifactId>
+			<version>1.0.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.7.3</version>
 		</dependency>
 	</dependencies>
 	<parent>
@@ -115,4 +146,7 @@
 		<url>http://zeiv.dsmynas.com:5050</url>
 		<system>JIRA</system>
 	</issueManagement>
+	<properties>
+		<version.vaadin>7.1.13</version.vaadin>
+	</properties>
 </project>
