@@ -34,8 +34,8 @@
   <property generated="never" lazy="false" name="sheetnumber" type="string">
    <column name="sheetnumber"/>
   </property>
-  <property generated="never" lazy="false" name="regdate" type="string">
-   <column length="20" name="regdate"/>
+  <property generated="never" lazy="false" name="regdate" type="timestamp">
+   <column length="29" name="regdate"/>
   </property>
   <property generated="never" lazy="false" name="requestcontent" type="string">
    <column length="100" name="requestcontent" not-null="true"/>

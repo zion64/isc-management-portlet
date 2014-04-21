@@ -5,5 +5,6 @@
 	<category name="ISC Manager">
 		<portlet id="isc-manager-portlet" />
 		<portlet id="newvaadinportlet"></portlet>
+		<portlet id="smartsheetvaadinportletui"></portlet>
 	</category>
 </display>

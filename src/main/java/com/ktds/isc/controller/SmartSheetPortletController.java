@@ -1,11 +1,11 @@
 /*----------------------------------------------------------------------------*/
-/* Source File:   SECONDPORTLETCONTROLLER.JAVA                                */
-/* Description:   Controller Class for 'firstportlet' portlet.                */
-/* Author:        Carlos Adolfo Ortiz Quirós (COQ)                            */
-/* Date:          Jul.16/2013                                                 */
-/* Last Modified: Jul.16/2013                                                 */
-/* Version:       1.1                                                         */
-/* Copyright (c), 2013 CSoftZ                                                 */
+/* Source File: SECONDPORTLETCONTROLLER.JAVA */
+/* Description: Controller Class for 'firstportlet' portlet. */
+/* Author: Carlos Adolfo Ortiz Quirós (COQ) */
+/* Date: Jul.16/2013 */
+/* Last Modified: Jul.16/2013 */
+/* Version: 1.1 */
+/* Copyright (c), 2013 CSoftZ */
 /*----------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------
  History
@@ -27,16 +27,16 @@ import org.springframework.web.portlet.bind.annotation.RenderMapping;
  * 
  * If you want to use Spring Web MVC Porlet then follow the instructions
  * contained in this article <a href=
- * 'http://www.opensource-techblog.com/2012/09/spring-mvc-portlet-in-liferay.html'>Spring
- * MVC Portlet in Liferay</a>. Here you will use the Annotated Classes for
+ * 'http://www.opensource-techblog.com/2012/09/spring-mvc-portlet-in-liferay.html'>Spri
+ * n g MVC Portlet in Liferay</a>. Here you will use the Annotated Classes for
  * Spring Framework 2.5.x, in this portlet Spring Framework 3.2.3.RELEASE is
  * used. You can also follow the documentation contained in the official Spring
  * Framework doc site. http://static.springsource.org/spring/docs
  * /3.2.x/spring-framework-reference/html/portlet.html
  * 
  * A reference also is: <a href=
- * 'http://portalhub.wordpress.com/2012/05/12/spring-mvc-portlet-hello-world-based-on-annotations'>Spring
- * MVC Portlet Hello World with annotations</a>
+ * 'http://portalhub.wordpress.com/2012/05/12/spring-mvc-portlet-hello-world-based-on-annotations'>Spri
+ * n g MVC Portlet Hello World with annotations</a>
  * 
  * @since 1.5(JDK), Jul.16/2013
  * @author Carlos Adolfo Ortiz Quirós (COQ)
@@ -50,6 +50,14 @@ public class SmartSheetPortletController {
 	public String handleException() {
 		return "errorPage";
 	}
+
+//	@InitBinder
+//	public void initBinder(WebDataBinder webDataBinder) {
+//		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//		dateFormat.setLenient(false);
+//		webDataBinder.registerCustomEditor(null, "<span class=\"skimlinks-unlinked\">Date.class</span>", new CustomDateEditor(dateFormat,
+//				true));
+//	}
 
 	@RenderMapping
 	public String showHomePage(RenderRequest request, RenderResponse response) {

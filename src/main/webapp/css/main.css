@@ -17,3 +17,13 @@
 	background-color: #e8e8e8 float :right;
 	width: 50%
 }
+
+.yui3-datatable .yui3-datatable-col-foo {
+    padding: 0;
+    width: 225px;
+}
+.yui3-datatable .yui3-datatable-col-foo .yui3-datatable-liner {
+    overflow: hidden;
+    padding: 4px 10px;
+    width: 225px;
+}
