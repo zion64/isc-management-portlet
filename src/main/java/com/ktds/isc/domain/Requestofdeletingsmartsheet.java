@@ -24,8 +24,10 @@ public class Requestofdeletingsmartsheet implements java.io.Serializable {
 	private String				customername;
 	private String				customercode;
 	private String				sheetnumber;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date				regdate;
 	private String				requestcontent;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date				modifieddate;
 
 	public Requestofdeletingsmartsheet() {
@@ -135,7 +137,6 @@ public class Requestofdeletingsmartsheet implements java.io.Serializable {
 		return this.regdate;
 	}
 
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}

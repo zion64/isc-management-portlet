@@ -58,11 +58,11 @@ public class KnowledgePortletController {
 	@Autowired(required = false)
 	private RequestofdeletingsmartsheetHome requestofdeletingsmartsheetHome;
 
-	@InitBinder
-	protected void initBinder(WebDataBinder binder) {
-	    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-	    binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
-	}
+//	@InitBinder
+//	protected void initBinder(WebDataBinder binder) {
+//	    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//	    binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
+//	}
 	
 	@RenderMapping
 	public String showHomePage(RenderRequest request, RenderResponse response, Model model) {
