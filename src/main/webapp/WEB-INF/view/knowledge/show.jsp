@@ -43,7 +43,7 @@
 	        recordset: data,
 	        sortable: true,
 	        scrollable: "y",
-	        width: "1200px"
+	        width: "1240px"
 	      }
 	    ).render('#smartsheet-delete-req-list');
 	  }

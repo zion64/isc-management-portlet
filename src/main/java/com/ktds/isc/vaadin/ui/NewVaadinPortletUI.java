@@ -1,4 +1,4 @@
-package com.ktds.isc.vaadin;
+package com.ktds.isc.vaadin.ui;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;

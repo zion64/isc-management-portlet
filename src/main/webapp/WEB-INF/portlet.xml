@@ -39,7 +39,7 @@
 		<portlet-class>com.vaadin.server.VaadinPortlet</portlet-class>
 		<init-param>
 			<name>UI</name>
-			<value>com.ktds.isc.vaadin.NewVaadinPortletUI</value>
+			<value>com.ktds.isc.vaadin.ui.NewVaadinPortletUI</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
@@ -71,14 +71,75 @@
 		<portlet-name>smartsheetvaadinportletui</portlet-name>
 		<display-name>SmartSheetVaadinPortletUI</display-name>
 		<portlet-class>com.vaadin.server.VaadinPortlet</portlet-class>
+        <init-param>
+            <name>UI</name>
+            <value>com.ktds.isc.vaadin.ui.SmartSheetVaadinPortletUI</value>
+        </init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
 			<portlet-mode>view</portlet-mode>
 		</supports>
+        <resource-bundle>content.Language</resource-bundle>
 		<portlet-info>
 			<title>SmartSheetVaadinPortletUI</title>
 			<short-title>SmartSheetVaadinPortletUI</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>my-new</portlet-name>
+		<display-name>My New</display-name>
+		<portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/my-new/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>about-template</name>
+			<value>/html/my-new/about.jsp</value>
+		</init-param>
+		<init-param>
+			<name>config-template</name>
+			<value>/html/my-new/config.jsp</value>
+		</init-param>
+		<init-param>
+			<name>edit-defaults-template</name>
+			<value>/html/my-new/edit-defaults.jsp</value>
+		</init-param>
+		<init-param>
+			<name>preview-template</name>
+			<value>/html/my-new/preview.jsp</value>
+		</init-param>
+		<init-param>
+			<name>print-template</name>
+			<value>/html/my-new/print.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>about</portlet-mode>
+			<portlet-mode>config</portlet-mode>
+			<portlet-mode>edit_defaults</portlet-mode>
+			<portlet-mode>preview</portlet-mode>
+			<portlet-mode>print</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>My New</title>
+			<short-title>My New</short-title>
 			<keywords></keywords>
 		</portlet-info>
 		<security-role-ref>

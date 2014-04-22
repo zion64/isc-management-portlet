@@ -79,6 +79,6 @@ public class KnowledgePortletController {
 			e.printStackTrace();
 		}
 		return "knowledge/show";
-
+//		return "smartsheet/show";
 	}
 }
