@@ -2,6 +2,14 @@
 <%@page import="org.apache.commons.lang3.time.DateFormatUtils"%>
 
 <%@ taglib prefix="portlet" uri="http://java.sun.com/portlet_2_0"%>
+
+<%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
+<%@ taglib uri="http://liferay.com/tld/portlet" prefix="liferay-portlet" %>
+<%@ taglib uri="http://liferay.com/tld/security" prefix="liferay-security" %>
+<%@ taglib uri="http://liferay.com/tld/theme" prefix="liferay-theme" %>
+<%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
+<%@ taglib uri="http://liferay.com/tld/util" prefix="liferay-util" %>
+
 <%@ taglib prefix="aui" uri="http://liferay.com/tld/aui"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -9,6 +17,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
 
 <portlet:defineObjects />
+<liferay-theme:defineObjects />
 
 로그인한 사용자: ${user.getUserId()}/${user.getFullName()}/${user.getUuid()}
 
